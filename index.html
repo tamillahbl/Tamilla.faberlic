@@ -1,0 +1,374 @@
+```html
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamilla Mustafayeva | Faberlic Lideri & Şəxsi Biznes Səhifəsi</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        faberlic: '#e30613',
+                        roseGold: '#d4af37',
+                        softPink: '#fff0f3',
+                        roseAccent: '#f7d6e0',
+                        deepRose: '#c9184a',
+                        darkText: '#2b2d42'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background: linear-gradient(135deg, #fff5f7 0%, #fae1e6 50%, #f0efff 100%);
+            color: #2b2d42;
+            min-height: 100vh;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            box-shadow: 0 10px 30px -5px rgba(227, 6, 19, 0.08);
+        }
+
+        .btn-gradient-primary {
+            background: linear-gradient(135deg, #e30613 0%, #c9184a 100%);
+            box-shadow: 0 8px 20px -4px rgba(227, 6, 19, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-gradient-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px -4px rgba(227, 6, 19, 0.5);
+        }
+
+        .btn-gradient-whatsapp {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            box-shadow: 0 8px 20px -4px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-gradient-whatsapp:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px -4px rgba(37, 211, 102, 0.5);
+        }
+
+        .btn-gradient-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            box-shadow: 0 8px 20px -4px rgba(220, 39, 67, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-gradient-instagram:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px -4px rgba(220, 39, 67, 0.5);
+        }
+
+        .btn-glass {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid rgba(227, 6, 19, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .btn-glass:hover {
+            background: #ffffff;
+            border-color: #e30613;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(227, 6, 19, 0.15);
+        }
+
+        .floating-badge {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-6px); }
+        }
+    </style>
+</head>
+<body class="py-6 px-4 md:py-12">
+
+    <!-- Əsas Konteyner -->
+    <main class="max-w-xl mx-auto space-y-6">
+
+        <!-- HEADER / VİZİT KART SEKSİYASI -->
+        <section class="glass-card rounded-3xl p-6 md:p-8 text-center relative overflow-hidden">
+            <!-- Arxa plan bəzəyi -->
+            <div class="absolute -top-12 -right-12 w-32 h-32 bg-roseAccent rounded-full blur-2xl opacity-60"></div>
+            <div class="absolute -bottom-12 -left-12 w-32 h-32 bg-pink-300 rounded-full blur-2xl opacity-60"></div>
+
+            <!-- Profil Şəkli / Avatar Konteyneri -->
+            <div class="relative inline-block mb-4">
+                <div class="w-28 h-28 md:w-32 md:h-32 rounded-full p-1 bg-gradient-to-tr from-pink-600 via-roseGold to-faberlic shadow-xl mx-auto">
+                    <!-- Faberlic Rəsmi Logosu (Birəbir Şəkil Vizualı) -->
+                    <div class="w-full h-full rounded-full overflow-hidden bg-[#e20074] flex items-center justify-center relative shadow-inner">
+                        <svg viewBox="0 0 400 400" class="w-full h-full p-3 bg-[#e20074]" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="400" fill="#e20074"/>
+                            <text x="200" y="145" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="115" text-anchor="middle" letter-spacing="4">FAB</text>
+                            <text x="200" y="245" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="115" text-anchor="middle" letter-spacing="4">ER</text>
+                            <text x="200" y="345" fill="#ffffff" font-family="'Plus Jakarta Sans', sans-serif" font-weight="400" font-size="115" text-anchor="middle" letter-spacing="4">LIC</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ad və Titul -->
+            <h1 class="font-serif text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
+                Tamilla Mustafayeva
+            </h1>
+            <p class="text-sm font-semibold text-faberlic mt-1 tracking-wide uppercase">
+                Faberlic Lideri & Biznes Tərəfdaşı
+            </p>
+            <p class="text-sm text-gray-600 mt-2 leading-relaxed">
+                Öz biznesinizi sıfırdan qurmağa, gözəllik dünyasından qazanmağa və 20%+ endirimlərdən yararlanmağa hazır olun! 💖
+            </p>
+
+            <!-- Təcili Əlaqə Düymələri (Flex Layout) -->
+            <div class="grid grid-cols-2 gap-3 mt-6">
+                <a href="https://wa.me/994705002730" target="_blank" rel="noopener font-semibold" 
+                   class="btn-gradient-whatsapp text-white py-3 px-4 rounded-2xl flex items-center justify-center space-x-2 text-sm font-semibold">
+                    <i class="fa-brands fa-whatsapp text-lg"></i>
+                    <span>WhatsApp-da Yaz</span>
+                </a>
+                <a href="https://www.instagram.com/tamilla.faberlic?evlk=bnMwcGY1dDhwdGtw" target="_blank" rel="noopener" 
+                   class="btn-gradient-instagram text-white py-3 px-4 rounded-2xl flex items-center justify-center space-x-2 text-sm font-semibold">
+                    <i class="fa-brands fa-instagram text-lg"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- ƏSAS ÇAĞIRIŞ: KOMANDAMA QOŞUL VƏ QEYDİYYAT -->
+        <section class="glass-card rounded-3xl p-6 relative">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 rounded-2xl bg-red-100 text-faberlic flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <div>
+                    <h2 class="font-serif font-bold text-lg text-gray-900">Komandamıza Qoşulun</h2>
+                    <p class="text-xs text-gray-500">Endirimli alıcı və ya biznes tərəfdaşı olun</p>
+                </div>
+            </div>
+
+            <p class="text-sm text-gray-600 mb-4 leading-relaxed">
+                Rəsmi Faberlic qeydiyyatından keçərək dərhal endirimlər, hədiyyələr və biznes dəstəyi əldə edin.
+            </p>
+
+            <div class="space-y-3">
+                <!-- Struktura Birbaşa Qeydiyyat (Ən Böyük Düymə) -->
+                <a href="https://faberlic.com/register?sponsornumber=734420985&lang=az&r=1000034185656" target="_blank" rel="noopener"
+                   class="btn-gradient-primary text-white w-full py-4 px-5 rounded-2xl flex items-center justify-between font-bold text-base group">
+                    <span class="flex items-center space-x-3">
+                        <i class="fa-solid fa-signature text-xl"></i>
+                        <span>Struktura Birbaşa Qeydiyyat</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                </a>
+
+                <!-- Yeni İstifadəçilər Üçün Özel Keçid -->
+                <a href="https://faberlic.com/index2.php?option=com_content&view=article&id=236909&lang=ru&Itemid=5312&sponsornumber=734420985&lang=az&r=1000034185656" target="_blank" rel="noopener"
+                   class="btn-glass text-gray-800 w-full py-3.5 px-4 rounded-2xl flex items-center justify-between text-sm font-semibold group">
+                    <span class="flex items-center space-x-3">
+                        <i class="fa-solid fa-gift text-faberlic"></i>
+                        <span>Yeni İstifadəçilər Üçün Özəl Keçid</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-faberlic transition-colors"></i>
+                </a>
+
+                <!-- Faberlic Rəsmi Şəxsi Saytım -->
+                <a href="https://faberlic.com/?sponsornumber=734420985&lang=az&r=1000034185656" target="_blank" rel="noopener"
+                   class="btn-glass text-gray-800 w-full py-3.5 px-4 rounded-2xl flex items-center justify-between text-sm font-semibold group">
+                    <span class="flex items-center space-x-3">
+                        <i class="fa-solid fa-globe text-faberlic"></i>
+                        <span>Faberlic Rəsmi Şəxsi Saytım</span>
+                    </span>
+                    <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-faberlic transition-colors"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- CARİ KATALOQ VƏ YENİ ALICI AKSİYASI -->
+        <section class="glass-card rounded-3xl p-6">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 rounded-2xl bg-amber-100 text-roseGold flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-book-open"></i>
+                </div>
+                <div>
+                    <h2 class="font-serif font-bold text-lg text-gray-900">Cari Kataloq & Aksiyalar</h2>
+                    <p class="text-xs text-gray-500">Ən son yeniliklər və fürsətlər</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <!-- Onlayn Kataloq -->
+                <a href="https://faberlic.com/az/az/catalogs/1327?sponsornumber=734420985" target="_blank" rel="noopener"
+                   class="p-4 rounded-2xl bg-gradient-to-br from-rose-50 to-pink-100 border border-pink-200/60 block hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-faberlic">Kataloq</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs text-gray-400"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-sm">Onlayn Kataloqu Vərəqlə</h3>
+                    <p class="text-xs text-gray-500 mt-1">Ən son endirimlərə rəsmi kataloqdan baxın.</p>
+                </a>
+
+                <!-- Yeni Alıcı Aksiyası -->
+                <a href="https://faberlic.com/az/az/content/statr-16-2026" target="_blank" rel="noopener"
+                   class="p-4 rounded-2xl bg-gradient-to-br from-amber-50 to-orange-100 border border-amber-200/60 block hover:shadow-md transition-shadow">
+                    <div class="flex items-center justify-between mb-2">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Aksiya</span>
+                        <i class="fa-solid fa-award text-amber-600"></i>
+                    </div>
+                    <h3 class="font-bold text-gray-900 text-sm">Yeni Alıcılar Üçün Aksiya</h3>
+                    <p class="text-xs text-gray-500 mt-1">Bu kataloqda ilk sifariş hədiyyənizi görün.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- START PROQRAMI & İNKİŞAF İMKANLARI -->
+        <section class="glass-card rounded-3xl p-6">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div>
+                    <h2 class="font-serif font-bold text-lg text-gray-900">Start Proqramı</h2>
+                    <p class="text-xs text-gray-500">Yeni başlayanlar üçün addım-addım hədiyyələr</p>
+                </div>
+            </div>
+
+            <a href="https://faberlic.com/az/az/content/news-11351" target="_blank" rel="noopener"
+               class="btn-glass text-gray-900 w-full p-4 rounded-2xl flex items-center justify-between border-purple-200 hover:border-purple-400 group">
+                <div class="flex items-center space-x-3">
+                    <i class="fa-solid fa-box-open text-purple-600 text-xl"></i>
+                    <div class="text-left">
+                        <div class="font-bold text-sm">Faberlic Start Proqramı Ətraflı</div>
+                        <div class="text-xs text-gray-500">9 addım boyunca eksklüziv dəstləri super endirimlə alın.</div>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right text-gray-400 group-hover:text-purple-600 transition-colors"></i>
+            </a>
+        </section>
+
+        <!-- EKSKLÜZİV YENİLİKLƏR VƏ DİGƏR KEÇİDLƏR -->
+        <section class="glass-card rounded-3xl p-6">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-10 h-10 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-lg font-bold">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <div>
+                    <h2 class="font-serif font-bold text-lg text-gray-900">Faydalı Məlumatlar</h2>
+                    <p class="text-xs text-gray-500">Biznes və VIP imkanlar haqqında rəsmi keçidlər</p>
+                </div>
+            </div>
+
+            <div class="space-y-2.5">
+                <!-- VIP Proqramı -->
+                <a href="https://faberlic.com/az/az/content/news-15842" target="_blank" rel="noopener"
+                   class="btn-glass w-full py-3 px-4 rounded-xl flex items-center justify-between text-xs font-semibold text-gray-700">
+                    <span class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-star text-amber-500"></i>
+                        <span>VIP Proqramı və İmtiyazlı Şərtlər</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                </a>
+
+                <!-- Xüsusi Aksiyalar -->
+                <a href="https://faberlic.com/az/az/content/news-15383" target="_blank" rel="noopener"
+                   class="btn-glass w-full py-3 px-4 rounded-xl flex items-center justify-between text-xs font-semibold text-gray-700">
+                    <span class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-gifts text-faberlic"></i>
+                        <span>Xüsusi Aksiyalar və Hədiyyələr</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                </a>
+
+                <!-- Biznes və Bonuslar -->
+                <a href="https://faberlic.com/az/az/content/news-9996" target="_blank" rel="noopener"
+                   class="btn-glass w-full py-3 px-4 rounded-xl flex items-center justify-between text-xs font-semibold text-gray-700">
+                    <span class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-chart-line text-emerald-600"></i>
+                        <span>Biznes və Bonus Məlumatları</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                </a>
+
+                <!-- Əlavə Qazanc -->
+                <a href="https://faberlic.com/az/az/content/news-9902" target="_blank" rel="noopener"
+                   class="btn-glass w-full py-3 px-4 rounded-xl flex items-center justify-between text-xs font-semibold text-gray-700">
+                    <span class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-wallet text-indigo-600"></i>
+                        <span>Əlavə Qazanc və Gəlir İmkanları</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                </a>
+
+                <!-- Komanda Layihələri -->
+                <a href="https://faberlic.com/az/az/content/news-9997" target="_blank" rel="noopener"
+                   class="btn-glass w-full py-3 px-4 rounded-xl flex items-center justify-between text-xs font-semibold text-gray-700">
+                    <span class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-users text-rose-500"></i>
+                        <span>Komanda Üçün Xüsusi Layihələr</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                </a>
+
+                <!-- Yenilənmiş Proqram Şərtləri -->
+                <a href="https://faberlic.com/az/az/content/news-9882" target="_blank" rel="noopener"
+                   class="btn-glass w-full py-3 px-4 rounded-xl flex items-center justify-between text-xs font-semibold text-gray-700">
+                    <span class="flex items-center space-x-2.5">
+                        <i class="fa-solid fa-circle-info text-sky-500"></i>
+                        <span>Yenilənmiş Proqram Şərtləri</span>
+                    </span>
+                    <i class="fa-solid fa-arrow-right text-gray-400 text-xs"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- SUALIN VAR? CANLI WHATSAPP DESTEK FOOTER -->
+        <section class="glass-card rounded-3xl p-6 text-center">
+            <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto text-xl mb-3">
+                <i class="fa-solid fa-comments"></i>
+            </div>
+            <h3 class="font-serif font-bold text-base text-gray-900">Sualınız var və ya kömək lazımdır?</h3>
+            <p class="text-xs text-gray-500 mt-1 mb-4">
+                WhatsApp vasitəsilə mənə birbaşa yazın, qeydiyyat və ya ordənlərdə köməklik göstərim.
+            </p>
+            <a href="https://wa.me/994705002730" target="_blank" rel="noopener"
+               class="btn-gradient-whatsapp text-white w-full py-3.5 px-4 rounded-2xl flex items-center justify-center space-x-2 font-bold text-sm">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Birbaşa Çata Başla (+994 70 500 27 30)</span>
+            </a>
+        </section>
+
+        <!-- FOOTER / MÜƏLLİF HÜQUQLARI -->
+        <footer class="text-center py-4">
+            <p class="text-xs text-gray-500">
+                © 2026 Tamilla Mustafayeva — Faberlic Müstəqil Liderinin Şəxsi Biznes Səhifəsi.
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
+```
